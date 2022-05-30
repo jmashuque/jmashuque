@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url("images/background.jpg");
+	padding: 0;
+	margin: 0 auto;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+header {
+	background-color: #550000;
+	box-shadow: 0 0 30px #000000;
+	text-align: center;
+	text-shadow: 5px 5px 5px #000000;
+	width: 100%;
+	height: 80px;
+}
+.title {
+	padding: 10px 0;
+	margin: 0;
+	font-size: 40px;
+	font-weight: bold;
+	color: #dddddd;
+}
+main {
+	margin: 0 auto;
+	width: 1000px;
+	height: 500px;
+}
+article {
+	width: 600px;
+	height: 500px;
+	position: absolute;
+}
+#mainImg {
+	margin: 25px auto;
+	display: block;
+	box-shadow: 0px 0px 5px white;
+	opacity: 0;
+	transform: scale(0.8);
+	transition: 0.5s;
+}
+#mainImg.loaded {
+	opacity: 1;
+	transform: scale(1);
+}
+aside {
+	width: 400px;
+	height: 500px;
+	float: right;
+	position: relative;
+}
+#mainTxt {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-align: left;
+	top: 20px;
+	right: 100px;
+	color: #dddddd;
+}
+footer {
+	background-color: rgba(5,5,5,0.5);
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 700px;
+	height: 150px;
+	text-align: center;
+}
+a {
+  color: white;
+}
+.thumbImg {
+	margin: 15px 10px;
+	transition: 0.3s;
+}
+.thumbImg:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 5px red;
+	cursor: pointer;
+}
